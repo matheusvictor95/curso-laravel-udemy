@@ -6,16 +6,16 @@
     <title> Sobre Nós</title>
 </head>
 <body>
-    <h1> Sobre Nós </h1>
+    <h3> Principal </h3>
     <ul>
         <li>
-            <a href="/"> Principal</a>
+            <a href="{{route ('site.index')}}"> Principal</a>
         </li>
         <li>
-            <a href="/sobre-nos"> Sobre nós </a>
+            <a href="{{route ('site.sobrenos')}}"> Sobre nós </a>
         </li>
         <li>
-            <a href="/contato"> contato </a>
+            <a href="{{route ('site.contato')}}"> contato </a>
         </li>
     </ul>
 </body>
