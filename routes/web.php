@@ -38,8 +38,11 @@ Route::get ('/rota2', function(){
     return redirect()->route('site.rota1');
 })-> name('site.rota2');
 
+Route::get('/teste/{p1}/{p2}','TesteController@teste')->name('teste');
+
 Route::fallback(function(){
-        echo ' A página acessada não existe. Por favor <a href= "'.route('site.index').'">clique aqui</a> para ser ridirecionado a página principal';
+        echo ' A página acessada não existe. Por favor <a href= "'.route('site.index').'">clique aqui</a> 
+        para ser ridirecionado a página principal';
 });
 
 
